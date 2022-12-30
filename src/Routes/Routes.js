@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import Main from "../Layoutes/Main";
+import Main from "../Layout/Main";
 import Category from "../Pages/Category/Category/Category";
 import Home from "../Pages/Home/Home/Home";
 import News from "../Pages/News/News/News";
@@ -14,11 +14,11 @@ export const routes = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/category/id",
+        path: "/category/:id",
         element: <Category></Category>,
       },
       {
-        path: "/news/id",
+        path: "/news/:id",
         element: <News></News>,
       },
     ],
